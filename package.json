@@ -1,0 +1,10 @@
+{
+    "name": "com.alwaystoolate.gamecooker", 
+    "displayName": "AlwaysTooLate GameCooker",
+    "description": "AlwaysTooLate GameCooker module",
+    "unity": "2018.3", 
+    "version": "1.0.0", 
+    "dependencies": { 
+		"https://github.com/AlwaysTooLate/AlwaysTooLate.Core.git"
+	}
+}
