@@ -282,7 +282,9 @@ namespace AlwaysTooLate.GameCooker
                 target.BuildContent = EditorGUILayout.Toggle("Build Content (asset bundles)", target.BuildContent);
                 target.ContentDirectoryName =
                     EditorGUILayout.TextField("Content directory name", target.ContentDirectoryName);
-                target.ContentBuildOptions = (BuildAssetBundleOptions) EditorGUILayout.EnumFlagsField("Content build options", target.ContentBuildOptions);
+                target.ContentBuildOptions =
+                    (BuildAssetBundleOptions) EditorGUILayout.EnumFlagsField("Content build options",
+                        target.ContentBuildOptions);
 
                 // build actions directives
                 EditorGUILayout.Space();
