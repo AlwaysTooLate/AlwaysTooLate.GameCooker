@@ -8,7 +8,7 @@ Before installing this module, be sure to have installed these:
 - [AlwaysTooLate.Core](https://github.com/AlwaysTooLate/AlwaysTooLate.Core)
 
 Open your target project in Unity and use the Unity Package Manager (`Window` -> `Package Manager` -> `+` -> `Add package from git URL`) and paste the following URL:
-https://github.com/AlwaysTooLate/AlwaysTooLate.Logging.git
+https://github.com/AlwaysTooLate/AlwaysTooLate.GameCooker.git
 
 # Basic Usage
 
