@@ -18,6 +18,36 @@ Presents are used for grouping Targets. Targets are be used for configuring the 
 
 After selecting a Target from the window, you can start building by selecting `AlwaysTooLate` -> `GameCooker` -> `Build` or pressing `Alt`+`B`. Alternatively, you may select the `Scripts only` build (`Alt`+`Shift`+`B`) - warning, it is not a working feature yet.
 
+![cooker](https://user-images.githubusercontent.com/7634316/79242148-3ba1ff80-7e74-11ea-8e11-c04fc93b135c.png)
+
+# Continuous integration
+You can use script like this, to commit builds by your CI.
+```CSharp
+public static class JenkinsBuild
+{
+	public const int ReleasePreset = 1;
+
+	public static void Build()
+	{
+		try
+		{
+			// We could actually use the cooker directly in Jenkins configuration,
+			// but Erdroy is lazy.
+			// And this gives us some additional space for additional features.
+			CookerWindow.Build(ReleasePreset);
+		}
+		catch (Exception e)
+		{
+			// Print out the exception, and exit with fail result (-1)
+			Debug.LogException(e);
+			//Environment.Exit(-1); // Note: This is causing Unity to hang...
+		}
+	}
+}
+```
+Then invoke Unity from CI like in every other solution: 
+`-quit -batchmode -nographics -projectPath YOUR PROJECT -executeMethod JenkinsBuild.Build`
+
 # Contribution
 
 We do accept PR. Feel free to contribute. If you want to find us, look for the ATL staff on the official [AlwaysTooLate Discord Server](https://discord.alwaystoolate.com/)
