@@ -51,6 +51,8 @@ namespace AlwaysTooLate.GameCooker
             public string PreBuildAction;
 
             public BuildType Type;
+
+            public bool DoNotCleanDefines;
         }
     }
 }

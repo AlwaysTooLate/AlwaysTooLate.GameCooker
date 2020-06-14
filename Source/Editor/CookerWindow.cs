@@ -279,6 +279,7 @@ namespace AlwaysTooLate.GameCooker
                 // content building
                 EditorGUILayout.Space();
 
+                target.DoNotCleanDefines = EditorGUILayout.Toggle("Do not clean defines", target.DoNotCleanDefines);
                 target.BuildContent = EditorGUILayout.Toggle("Build Content (asset bundles)", target.BuildContent);
                 target.ContentDirectoryName =
                     EditorGUILayout.TextField("Content directory name", target.ContentDirectoryName);

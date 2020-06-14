@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 namespace AlwaysTooLate.GameCooker
@@ -102,6 +103,7 @@ namespace AlwaysTooLate.GameCooker
             // TODO: auto start option(warning: use proper working dir!)
 
             foreach (var target in SelectedPreset.Targets)
+            {
                 try
                 {
                     BuildPipelineHelper.Build(target);
@@ -110,9 +112,15 @@ namespace AlwaysTooLate.GameCooker
                 {
                     Debug.LogError("Failed to build target: " + target.Name + " error: " + ex);
                 }
+            }
 
-            // reset the directives
-            ResetDefines();
+            // If the last target is marked as not cleaning the defines
+            // ignore this function call.
+            if (!SelectedPreset.Targets.Last().DoNotCleanDefines)
+            {
+                // reset the directives
+                ResetDefines();
+            }
 
             // increase build number TODO: build counting
         }
