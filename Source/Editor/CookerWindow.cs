@@ -160,7 +160,7 @@ namespace AlwaysTooLate.GameCooker
                                     Name = readName,
                                     BuildTarget = BuildTarget.StandaloneWindows64,
                                     OutputName = "game_win_64",
-                                    ExecutableName = "game_win_64",
+                                    ExecutableName = "game_win_64.exe",
                                     DefineSymbols = new string[] { }
                                 });
                                 _cookerManager.Save();

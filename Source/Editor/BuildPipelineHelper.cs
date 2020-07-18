@@ -43,11 +43,11 @@ namespace AlwaysTooLate.GameCooker
 
             // use has some hacks, so we can use .exe for all platforms
             // it will be changed by the build pipeline
-            var outputPath = BuildPath + target.OutputName;
-            var outputPathName = outputPath + "/" + target.ExecutableName + ".exe";
+            var outputPath = Path.Combine(BuildPath, target.OutputName);
+            var outputPathName = Path.Combine(outputPath, target.ExecutableName);
 
             // delete the output directory if exists
-            if (File.Exists(outputPathName))
+            if (Directory.Exists(outputPathName))
                 // delete the directory
                 Directory.Delete(outputPath, true);
 
