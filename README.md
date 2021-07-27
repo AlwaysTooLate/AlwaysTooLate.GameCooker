@@ -12,11 +12,11 @@ https://github.com/AlwaysTooLate/AlwaysTooLate.GameCooker.git
 
 # Basic Usage
 
-In order to open the GameCooker's window, select `AlwaysTooLate` -> `GameCooker` -> `Open`. From there, you can browse, create, edit or delete Presets and Targets.
+In order to open the GameCooker's window, select `Tools` -> `Always Too Late` -> `GameCooker` -> `Open`. From there, you can browse, create, edit or delete Presets and Targets.
 
 Presents are used for grouping Targets. Targets are be used for configuring the build's target platform, type (Debug or Release) and define symbols, plus some additional settings.
 
-After selecting a Target from the window, you can start building by selecting `AlwaysTooLate` -> `GameCooker` -> `Build` or pressing `Alt`+`B`. Alternatively, you may select the `Scripts only` build (`Alt`+`Shift`+`B`) - warning, it is not a working feature yet.
+After selecting a Target from the window, you can start building by selecting `Tools` -> `Always Too Late` -> `GameCooker` -> `Build` or pressing `Alt`+`B`. Alternatively, you may select the `Scripts only` build (`Alt`+`Shift`+`B`) - warning, it is not a working feature yet.
 
 ![cooker](https://user-images.githubusercontent.com/7634316/79242148-3ba1ff80-7e74-11ea-8e11-c04fc93b135c.png)
 

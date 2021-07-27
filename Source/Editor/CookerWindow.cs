@@ -354,7 +354,7 @@ namespace AlwaysTooLate.GameCooker
         /// <summary>
         ///     Opens the Cooker window
         /// </summary>
-        [MenuItem("Always Too Late/Game Cooker/Open")]
+        [MenuItem("Tools/Always Too Late/Game Cooker/Open")]
         public static void ShowWindow()
         {
             // TODO: Use any editor builtin icon.
@@ -370,7 +370,7 @@ namespace AlwaysTooLate.GameCooker
         /// <summary>
         ///     Stats preset build
         /// </summary>
-        [MenuItem("Always Too Late/Game Cooker/Build &B")]
+        [MenuItem("Tools/Always Too Late/Game Cooker/Build &B")]
         public static void Build()
         {
             Build(-1);
@@ -379,7 +379,7 @@ namespace AlwaysTooLate.GameCooker
         /// <summary>
         ///     Stats preset scripts only build
         /// </summary>
-        [MenuItem("Always Too Late/Game Cooker/Build Scripts only &#B")]
+        [MenuItem("Tools/Always Too Late/Game Cooker/Build Scripts only &#B")]
         public static void BuildScripts()
         {
             Debug.LogWarning("Not implemented");
@@ -389,7 +389,7 @@ namespace AlwaysTooLate.GameCooker
             cookerManager.BuildScripts();*/
         }
 
-        [MenuItem("Always Too Late/Game Cooker/Reset Defines &R")]
+        [MenuItem("Tools/Always Too Late/Game Cooker/Reset Defines &R")]
         public static void ResetDefines()
         {
             var cookerManager = new CookerManager();
