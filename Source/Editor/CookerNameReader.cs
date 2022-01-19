@@ -1,4 +1,4 @@
-﻿// AlwaysTooLate.Core (c) 2018-2019 Always Too Late. All rights reserved.
+﻿// AlwaysTooLate.GameCooker (c) 2018-2022 Always Too Late. All rights reserved.
 
 using System;
 using UnityEditor;
